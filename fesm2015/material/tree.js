@@ -17,37 +17,37 @@ import { map } from 'rxjs/operators';
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 function TreeChecklistExample_mat_tree_node_1_Template(rf, ctx) { if (rf & 1) {
-    const _r270 = ɵɵgetCurrentView();
+    const _r56 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "mat-tree-node", 3);
     ɵɵelement(1, "button", 4);
     ɵɵelementStart(2, "mat-checkbox", 5);
-    ɵɵlistener("change", function TreeChecklistExample_mat_tree_node_1_Template_mat_checkbox_change_2_listener($event) { ɵɵrestoreView(_r270); const node_r268 = ctx.$implicit; const ctx_r269 = ɵɵnextContext(); return ctx_r269.todoLeafItemSelectionToggle(node_r268); });
+    ɵɵlistener("change", function TreeChecklistExample_mat_tree_node_1_Template_mat_checkbox_change_2_listener($event) { ɵɵrestoreView(_r56); const node_r54 = ctx.$implicit; const ctx_r55 = ɵɵnextContext(); return ctx_r55.todoLeafItemSelectionToggle(node_r54); });
     ɵɵtext(3);
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    const node_r268 = ctx.$implicit;
-    const ctx_r265 = ɵɵnextContext();
+    const node_r54 = ctx.$implicit;
+    const ctx_r51 = ɵɵnextContext();
     ɵɵadvance(2);
-    ɵɵproperty("checked", ctx_r265.checklistSelection.isSelected(node_r268));
+    ɵɵproperty("checked", ctx_r51.checklistSelection.isSelected(node_r54));
     ɵɵadvance(1);
-    ɵɵtextInterpolate(node_r268.item);
+    ɵɵtextInterpolate(node_r54.item);
 } }
 function TreeChecklistExample_mat_tree_node_2_Template(rf, ctx) { if (rf & 1) {
-    const _r274 = ɵɵgetCurrentView();
+    const _r60 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "mat-tree-node", 6);
     ɵɵelement(1, "button", 4);
     ɵɵelementStart(2, "mat-form-field");
     ɵɵelement(3, "input", 7, 8);
     ɵɵelementEnd();
     ɵɵelementStart(5, "button", 9);
-    ɵɵlistener("click", function TreeChecklistExample_mat_tree_node_2_Template_button_click_5_listener($event) { ɵɵrestoreView(_r274); const node_r271 = ctx.$implicit; const _r272 = ɵɵreference(4); const ctx_r273 = ɵɵnextContext(); return ctx_r273.saveNode(node_r271, _r272.value); });
+    ɵɵlistener("click", function TreeChecklistExample_mat_tree_node_2_Template_button_click_5_listener($event) { ɵɵrestoreView(_r60); const node_r57 = ctx.$implicit; const _r58 = ɵɵreference(4); const ctx_r59 = ɵɵnextContext(); return ctx_r59.saveNode(node_r57, _r58.value); });
     ɵɵtext(6, "Save");
     ɵɵelementEnd();
     ɵɵelementEnd();
 } }
 function TreeChecklistExample_mat_tree_node_3_Template(rf, ctx) { if (rf & 1) {
-    const _r277 = ɵɵgetCurrentView();
+    const _r63 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "mat-tree-node", 6);
     ɵɵelementStart(1, "button", 10);
     ɵɵelementStart(2, "mat-icon", 11);
@@ -55,27 +55,27 @@ function TreeChecklistExample_mat_tree_node_3_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementStart(4, "mat-checkbox", 12);
-    ɵɵlistener("change", function TreeChecklistExample_mat_tree_node_3_Template_mat_checkbox_change_4_listener($event) { ɵɵrestoreView(_r277); const node_r275 = ctx.$implicit; const ctx_r276 = ɵɵnextContext(); return ctx_r276.todoItemSelectionToggle(node_r275); });
+    ɵɵlistener("change", function TreeChecklistExample_mat_tree_node_3_Template_mat_checkbox_change_4_listener($event) { ɵɵrestoreView(_r63); const node_r61 = ctx.$implicit; const ctx_r62 = ɵɵnextContext(); return ctx_r62.todoItemSelectionToggle(node_r61); });
     ɵɵtext(5);
     ɵɵelementEnd();
     ɵɵelementStart(6, "button", 13);
-    ɵɵlistener("click", function TreeChecklistExample_mat_tree_node_3_Template_button_click_6_listener($event) { ɵɵrestoreView(_r277); const node_r275 = ctx.$implicit; const ctx_r278 = ɵɵnextContext(); return ctx_r278.addNewItem(node_r275); });
+    ɵɵlistener("click", function TreeChecklistExample_mat_tree_node_3_Template_button_click_6_listener($event) { ɵɵrestoreView(_r63); const node_r61 = ctx.$implicit; const ctx_r64 = ɵɵnextContext(); return ctx_r64.addNewItem(node_r61); });
     ɵɵelementStart(7, "mat-icon");
     ɵɵtext(8, "add");
     ɵɵelementEnd();
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    const node_r275 = ctx.$implicit;
-    const ctx_r267 = ɵɵnextContext();
+    const node_r61 = ctx.$implicit;
+    const ctx_r53 = ɵɵnextContext();
     ɵɵadvance(1);
-    ɵɵattribute("aria-label", "toggle " + node_r275.filename);
+    ɵɵattribute("aria-label", "toggle " + node_r61.filename);
     ɵɵadvance(2);
-    ɵɵtextInterpolate1(" ", ctx_r267.treeControl.isExpanded(node_r275) ? "expand_more" : "chevron_right", " ");
+    ɵɵtextInterpolate1(" ", ctx_r53.treeControl.isExpanded(node_r61) ? "expand_more" : "chevron_right", " ");
     ɵɵadvance(1);
-    ɵɵproperty("checked", ctx_r267.descendantsAllSelected(node_r275))("indeterminate", ctx_r267.descendantsPartiallySelected(node_r275));
+    ɵɵproperty("checked", ctx_r53.descendantsAllSelected(node_r61))("indeterminate", ctx_r53.descendantsPartiallySelected(node_r61));
     ɵɵadvance(1);
-    ɵɵtextInterpolate(node_r275.item);
+    ɵɵtextInterpolate(node_r61.item);
 } }
 /**
  * Node for to-do item
@@ -543,9 +543,9 @@ function TreeDynamicExample_mat_tree_node_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵtext(2);
     ɵɵelementEnd();
 } if (rf & 2) {
-    const node_r281 = ctx.$implicit;
+    const node_r67 = ctx.$implicit;
     ɵɵadvance(2);
-    ɵɵtextInterpolate1(" ", node_r281.item, " ");
+    ɵɵtextInterpolate1(" ", node_r67.item, " ");
 } }
 function TreeDynamicExample_mat_tree_node_2_mat_progress_bar_5_Template(rf, ctx) { if (rf & 1) {
     ɵɵelement(0, "mat-progress-bar", 8);
@@ -561,16 +561,16 @@ function TreeDynamicExample_mat_tree_node_2_Template(rf, ctx) { if (rf & 1) {
     ɵɵtemplate(5, TreeDynamicExample_mat_tree_node_2_mat_progress_bar_5_Template, 1, 0, "mat-progress-bar", 7);
     ɵɵelementEnd();
 } if (rf & 2) {
-    const node_r282 = ctx.$implicit;
-    const ctx_r280 = ɵɵnextContext();
+    const node_r68 = ctx.$implicit;
+    const ctx_r66 = ɵɵnextContext();
     ɵɵadvance(1);
-    ɵɵattribute("aria-label", "toggle " + node_r282.filename);
+    ɵɵattribute("aria-label", "toggle " + node_r68.filename);
     ɵɵadvance(2);
-    ɵɵtextInterpolate1(" ", ctx_r280.treeControl.isExpanded(node_r282) ? "expand_more" : "chevron_right", " ");
+    ɵɵtextInterpolate1(" ", ctx_r66.treeControl.isExpanded(node_r68) ? "expand_more" : "chevron_right", " ");
     ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", node_r282.item, " ");
+    ɵɵtextInterpolate1(" ", node_r68.item, " ");
     ɵɵadvance(1);
-    ɵɵproperty("ngIf", node_r282.isLoading);
+    ɵɵproperty("ngIf", node_r68.isLoading);
 } }
 /**
  * Flat node with expandable and level information
@@ -872,9 +872,9 @@ function TreeFlatOverviewExample_mat_tree_node_1_Template(rf, ctx) { if (rf & 1)
     ɵɵtext(2);
     ɵɵelementEnd();
 } if (rf & 2) {
-    const node_r286 = ctx.$implicit;
+    const node_r72 = ctx.$implicit;
     ɵɵadvance(2);
-    ɵɵtextInterpolate1(" ", node_r286.name, " ");
+    ɵɵtextInterpolate1(" ", node_r72.name, " ");
 } }
 function TreeFlatOverviewExample_mat_tree_node_2_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "mat-tree-node", 3);
@@ -886,14 +886,14 @@ function TreeFlatOverviewExample_mat_tree_node_2_Template(rf, ctx) { if (rf & 1)
     ɵɵtext(4);
     ɵɵelementEnd();
 } if (rf & 2) {
-    const node_r287 = ctx.$implicit;
-    const ctx_r285 = ɵɵnextContext();
+    const node_r73 = ctx.$implicit;
+    const ctx_r71 = ɵɵnextContext();
     ɵɵadvance(1);
-    ɵɵattribute("aria-label", "toggle " + node_r287.name);
+    ɵɵattribute("aria-label", "toggle " + node_r73.name);
     ɵɵadvance(2);
-    ɵɵtextInterpolate1(" ", ctx_r285.treeControl.isExpanded(node_r287) ? "expand_more" : "chevron_right", " ");
+    ɵɵtextInterpolate1(" ", ctx_r71.treeControl.isExpanded(node_r73) ? "expand_more" : "chevron_right", " ");
     ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", node_r287.name, " ");
+    ɵɵtextInterpolate1(" ", node_r73.name, " ");
 } }
 /**
  * Food data with nested structure.
@@ -1051,15 +1051,15 @@ function TreeLoadmoreExample_mat_tree_node_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵtext(2);
     ɵɵelementEnd();
 } if (rf & 2) {
-    const node_r291 = ctx.$implicit;
+    const node_r77 = ctx.$implicit;
     ɵɵadvance(2);
-    ɵɵtextInterpolate1(" ", node_r291.item, " ");
+    ɵɵtextInterpolate1(" ", node_r77.item, " ");
 } }
 function TreeLoadmoreExample_mat_tree_node_2_Template(rf, ctx) { if (rf & 1) {
-    const _r294 = ɵɵgetCurrentView();
+    const _r80 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "mat-tree-node", 4);
     ɵɵelementStart(1, "button", 6);
-    ɵɵlistener("click", function TreeLoadmoreExample_mat_tree_node_2_Template_button_click_1_listener($event) { ɵɵrestoreView(_r294); const node_r292 = ctx.$implicit; const ctx_r293 = ɵɵnextContext(); return ctx_r293.loadChildren(node_r292); });
+    ɵɵlistener("click", function TreeLoadmoreExample_mat_tree_node_2_Template_button_click_1_listener($event) { ɵɵrestoreView(_r80); const node_r78 = ctx.$implicit; const ctx_r79 = ɵɵnextContext(); return ctx_r79.loadChildren(node_r78); });
     ɵɵelementStart(2, "mat-icon", 7);
     ɵɵtext(3);
     ɵɵelementEnd();
@@ -1067,20 +1067,20 @@ function TreeLoadmoreExample_mat_tree_node_2_Template(rf, ctx) { if (rf & 1) {
     ɵɵtext(4);
     ɵɵelementEnd();
 } if (rf & 2) {
-    const node_r292 = ctx.$implicit;
-    const ctx_r289 = ɵɵnextContext();
+    const node_r78 = ctx.$implicit;
+    const ctx_r75 = ɵɵnextContext();
     ɵɵadvance(1);
-    ɵɵattribute("aria-label", "toggle " + node_r292.filename);
+    ɵɵattribute("aria-label", "toggle " + node_r78.filename);
     ɵɵadvance(2);
-    ɵɵtextInterpolate1(" ", ctx_r289.treeControl.isExpanded(node_r292) ? "expand_more" : "chevron_right", " ");
+    ɵɵtextInterpolate1(" ", ctx_r75.treeControl.isExpanded(node_r78) ? "expand_more" : "chevron_right", " ");
     ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", node_r292.item, " ");
+    ɵɵtextInterpolate1(" ", node_r78.item, " ");
 } }
 function TreeLoadmoreExample_mat_tree_node_3_Template(rf, ctx) { if (rf & 1) {
-    const _r297 = ɵɵgetCurrentView();
+    const _r83 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "mat-tree-node");
     ɵɵelementStart(1, "button", 8);
-    ɵɵlistener("click", function TreeLoadmoreExample_mat_tree_node_3_Template_button_click_1_listener($event) { ɵɵrestoreView(_r297); const node_r295 = ctx.$implicit; const ctx_r296 = ɵɵnextContext(); return ctx_r296.loadMore(node_r295.loadMoreParentItem); });
+    ɵɵlistener("click", function TreeLoadmoreExample_mat_tree_node_3_Template_button_click_1_listener($event) { ɵɵrestoreView(_r83); const node_r81 = ctx.$implicit; const ctx_r82 = ɵɵnextContext(); return ctx_r82.loadMore(node_r81.loadMoreParentItem); });
     ɵɵtext(2, " Load more... ");
     ɵɵelementEnd();
     ɵɵelementEnd();
@@ -1405,9 +1405,9 @@ function TreeNestedOverviewExample_mat_tree_node_1_Template(rf, ctx) { if (rf & 
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    const node_r300 = ctx.$implicit;
+    const node_r86 = ctx.$implicit;
     ɵɵadvance(3);
-    ɵɵtextInterpolate1(" ", node_r300.name, " ");
+    ɵɵtextInterpolate1(" ", node_r86.name, " ");
 } }
 function TreeNestedOverviewExample_mat_nested_tree_node_2_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "mat-nested-tree-node");
@@ -1426,16 +1426,16 @@ function TreeNestedOverviewExample_mat_nested_tree_node_2_Template(rf, ctx) { if
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    const node_r301 = ctx.$implicit;
-    const ctx_r299 = ɵɵnextContext();
+    const node_r87 = ctx.$implicit;
+    const ctx_r85 = ɵɵnextContext();
     ɵɵadvance(3);
-    ɵɵattribute("aria-label", "toggle " + node_r301.name);
+    ɵɵattribute("aria-label", "toggle " + node_r87.name);
     ɵɵadvance(2);
-    ɵɵtextInterpolate1(" ", ctx_r299.treeControl.isExpanded(node_r301) ? "expand_more" : "chevron_right", " ");
+    ɵɵtextInterpolate1(" ", ctx_r85.treeControl.isExpanded(node_r87) ? "expand_more" : "chevron_right", " ");
     ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", node_r301.name, " ");
+    ɵɵtextInterpolate1(" ", node_r87.name, " ");
     ɵɵadvance(1);
-    ɵɵclassProp("example-tree-invisible", !ctx_r299.treeControl.isExpanded(node_r301));
+    ɵɵclassProp("example-tree-invisible", !ctx_r85.treeControl.isExpanded(node_r87));
 } }
 /**
  * Food data with nested structure.

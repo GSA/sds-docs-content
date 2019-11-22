@@ -181,8 +181,8 @@ class NavigationHelper {
 function SdsFooter_img_7_Template(rf, ctx) { if (rf & 1) {
     ɵɵelement(0, "img", 22);
 } if (rf & 2) {
-    const ctx_r545 = ɵɵnextContext();
-    ɵɵattribute("src", ctx_r545.model.footerLogo.imageSourcePath, ɵɵsanitizeUrl)("alt", ctx_r545.model.footerLogo.imageAltText);
+    const ctx_r0 = ɵɵnextContext();
+    ɵɵattribute("src", ctx_r0.model.footerLogo.imageSourcePath, ɵɵsanitizeUrl)("alt", ctx_r0.model.footerLogo.imageAltText);
 } }
 function SdsFooter_a_8_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "a", 23);
@@ -195,13 +195,13 @@ function SdsFooter_div_15_li_5_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainer(1, 30);
     ɵɵelementEnd();
 } if (rf & 2) {
-    const link_r556 = ctx.$implicit;
-    const ctx_r555 = ɵɵnextContext(2);
-    const _r548 = ɵɵreference(26);
-    const _r550 = ɵɵreference(28);
-    const _r552 = ɵɵreference(30);
+    const link_r11 = ctx.$implicit;
+    const ctx_r10 = ɵɵnextContext(2);
+    const _r3 = ɵɵreference(26);
+    const _r5 = ɵɵreference(28);
+    const _r7 = ɵɵreference(30);
     ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", ctx_r555.navigationHelper.isLinkInternal(link_r556) ? _r548 : ctx_r555.navigationHelper.isLinkExternal(link_r556) ? _r550 : _r552)("ngTemplateOutletContext", ɵɵpureFunction1(2, _c0, link_r556));
+    ɵɵproperty("ngTemplateOutlet", ctx_r10.navigationHelper.isLinkInternal(link_r11) ? _r3 : ctx_r10.navigationHelper.isLinkExternal(link_r11) ? _r5 : _r7)("ngTemplateOutletContext", ɵɵpureFunction1(2, _c0, link_r11));
 } }
 function SdsFooter_div_15_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "div", 24);
@@ -215,11 +215,11 @@ function SdsFooter_div_15_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementEnd();
     ɵɵelementEnd();
 } if (rf & 2) {
-    const section_r554 = ctx.$implicit;
+    const section_r9 = ctx.$implicit;
     ɵɵadvance(3);
-    ɵɵtextInterpolate(section_r554.text);
+    ɵɵtextInterpolate(section_r9.text);
     ɵɵadvance(2);
-    ɵɵproperty("ngForOf", section_r554.links);
+    ɵɵproperty("ngForOf", section_r9.links);
 } }
 const _c1 = function (a0) { return [a0]; };
 function SdsFooter_ng_template_25_Template(rf, ctx) { if (rf & 1) {
@@ -227,31 +227,31 @@ function SdsFooter_ng_template_25_Template(rf, ctx) { if (rf & 1) {
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
-    const link_r557 = ctx.$implicit;
-    ɵɵproperty("routerLink", ɵɵpureFunction1(2, _c1, link_r557.route));
+    const link_r12 = ctx.$implicit;
+    ɵɵproperty("routerLink", ɵɵpureFunction1(2, _c1, link_r12.route));
     ɵɵadvance(1);
-    ɵɵtextInterpolate(link_r557.text);
+    ɵɵtextInterpolate(link_r12.text);
 } }
 function SdsFooter_ng_template_27_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "a");
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
-    const link_r558 = ctx.$implicit;
-    ɵɵattribute("href", ɵɵpureFunction1(2, _c1, link_r558.route), ɵɵsanitizeUrl);
+    const link_r13 = ctx.$implicit;
+    ɵɵattribute("href", ɵɵpureFunction1(2, _c1, link_r13.route), ɵɵsanitizeUrl);
     ɵɵadvance(1);
-    ɵɵtextInterpolate(link_r558.text);
+    ɵɵtextInterpolate(link_r13.text);
 } }
 function SdsFooter_ng_template_29_Template(rf, ctx) { if (rf & 1) {
-    const _r561 = ɵɵgetCurrentView();
+    const _r16 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "a", 32);
-    ɵɵlistener("click", function SdsFooter_ng_template_29_Template_a_click_0_listener($event) { ɵɵrestoreView(_r561); const link_r559 = ctx.$implicit; const ctx_r560 = ɵɵnextContext(); return ctx_r560.linkClickEvent(link_r559); });
+    ɵɵlistener("click", function SdsFooter_ng_template_29_Template_a_click_0_listener($event) { ɵɵrestoreView(_r16); const link_r14 = ctx.$implicit; const ctx_r15 = ɵɵnextContext(); return ctx_r15.linkClickEvent(link_r14); });
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
-    const link_r559 = ctx.$implicit;
+    const link_r14 = ctx.$implicit;
     ɵɵadvance(1);
-    ɵɵtextInterpolate(link_r559.text);
+    ɵɵtextInterpolate(link_r14.text);
 } }
 /**
  * @license
