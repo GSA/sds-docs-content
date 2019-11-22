@@ -15,37 +15,37 @@ import * as i4 from "@angular/material/form-field";
 import * as i5 from "@angular/material/input";
 import * as i6 from "@angular/material/icon";
 function TreeChecklistExample_mat_tree_node_1_Template(rf, ctx) { if (rf & 1) {
-    const _r56 = i0.ɵɵgetCurrentView();
+    const _r76 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "mat-tree-node", 3);
     i0.ɵɵelement(1, "button", 4);
     i0.ɵɵelementStart(2, "mat-checkbox", 5);
-    i0.ɵɵlistener("change", function TreeChecklistExample_mat_tree_node_1_Template_mat_checkbox_change_2_listener($event) { i0.ɵɵrestoreView(_r56); const node_r54 = ctx.$implicit; const ctx_r55 = i0.ɵɵnextContext(); return ctx_r55.todoLeafItemSelectionToggle(node_r54); });
+    i0.ɵɵlistener("change", function TreeChecklistExample_mat_tree_node_1_Template_mat_checkbox_change_2_listener($event) { i0.ɵɵrestoreView(_r76); const node_r74 = ctx.$implicit; const ctx_r75 = i0.ɵɵnextContext(); return ctx_r75.todoLeafItemSelectionToggle(node_r74); });
     i0.ɵɵtext(3);
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    const node_r54 = ctx.$implicit;
-    const ctx_r51 = i0.ɵɵnextContext();
+    const node_r74 = ctx.$implicit;
+    const ctx_r71 = i0.ɵɵnextContext();
     i0.ɵɵadvance(2);
-    i0.ɵɵproperty("checked", ctx_r51.checklistSelection.isSelected(node_r54));
+    i0.ɵɵproperty("checked", ctx_r71.checklistSelection.isSelected(node_r74));
     i0.ɵɵadvance(1);
-    i0.ɵɵtextInterpolate(node_r54.item);
+    i0.ɵɵtextInterpolate(node_r74.item);
 } }
 function TreeChecklistExample_mat_tree_node_2_Template(rf, ctx) { if (rf & 1) {
-    const _r60 = i0.ɵɵgetCurrentView();
+    const _r80 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "mat-tree-node", 6);
     i0.ɵɵelement(1, "button", 4);
     i0.ɵɵelementStart(2, "mat-form-field");
     i0.ɵɵelement(3, "input", 7, 8);
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(5, "button", 9);
-    i0.ɵɵlistener("click", function TreeChecklistExample_mat_tree_node_2_Template_button_click_5_listener($event) { i0.ɵɵrestoreView(_r60); const node_r57 = ctx.$implicit; const _r58 = i0.ɵɵreference(4); const ctx_r59 = i0.ɵɵnextContext(); return ctx_r59.saveNode(node_r57, _r58.value); });
+    i0.ɵɵlistener("click", function TreeChecklistExample_mat_tree_node_2_Template_button_click_5_listener($event) { i0.ɵɵrestoreView(_r80); const node_r77 = ctx.$implicit; const _r78 = i0.ɵɵreference(4); const ctx_r79 = i0.ɵɵnextContext(); return ctx_r79.saveNode(node_r77, _r78.value); });
     i0.ɵɵtext(6, "Save");
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
 } }
 function TreeChecklistExample_mat_tree_node_3_Template(rf, ctx) { if (rf & 1) {
-    const _r63 = i0.ɵɵgetCurrentView();
+    const _r83 = i0.ɵɵgetCurrentView();
     i0.ɵɵelementStart(0, "mat-tree-node", 6);
     i0.ɵɵelementStart(1, "button", 10);
     i0.ɵɵelementStart(2, "mat-icon", 11);
@@ -53,27 +53,27 @@ function TreeChecklistExample_mat_tree_node_3_Template(rf, ctx) { if (rf & 1) {
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(4, "mat-checkbox", 12);
-    i0.ɵɵlistener("change", function TreeChecklistExample_mat_tree_node_3_Template_mat_checkbox_change_4_listener($event) { i0.ɵɵrestoreView(_r63); const node_r61 = ctx.$implicit; const ctx_r62 = i0.ɵɵnextContext(); return ctx_r62.todoItemSelectionToggle(node_r61); });
+    i0.ɵɵlistener("change", function TreeChecklistExample_mat_tree_node_3_Template_mat_checkbox_change_4_listener($event) { i0.ɵɵrestoreView(_r83); const node_r81 = ctx.$implicit; const ctx_r82 = i0.ɵɵnextContext(); return ctx_r82.todoItemSelectionToggle(node_r81); });
     i0.ɵɵtext(5);
     i0.ɵɵelementEnd();
     i0.ɵɵelementStart(6, "button", 13);
-    i0.ɵɵlistener("click", function TreeChecklistExample_mat_tree_node_3_Template_button_click_6_listener($event) { i0.ɵɵrestoreView(_r63); const node_r61 = ctx.$implicit; const ctx_r64 = i0.ɵɵnextContext(); return ctx_r64.addNewItem(node_r61); });
+    i0.ɵɵlistener("click", function TreeChecklistExample_mat_tree_node_3_Template_button_click_6_listener($event) { i0.ɵɵrestoreView(_r83); const node_r81 = ctx.$implicit; const ctx_r84 = i0.ɵɵnextContext(); return ctx_r84.addNewItem(node_r81); });
     i0.ɵɵelementStart(7, "mat-icon");
     i0.ɵɵtext(8, "add");
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
     i0.ɵɵelementEnd();
 } if (rf & 2) {
-    const node_r61 = ctx.$implicit;
-    const ctx_r53 = i0.ɵɵnextContext();
+    const node_r81 = ctx.$implicit;
+    const ctx_r73 = i0.ɵɵnextContext();
     i0.ɵɵadvance(1);
-    i0.ɵɵattribute("aria-label", "toggle " + node_r61.filename);
+    i0.ɵɵattribute("aria-label", "toggle " + node_r81.filename);
     i0.ɵɵadvance(2);
-    i0.ɵɵtextInterpolate1(" ", ctx_r53.treeControl.isExpanded(node_r61) ? "expand_more" : "chevron_right", " ");
+    i0.ɵɵtextInterpolate1(" ", ctx_r73.treeControl.isExpanded(node_r81) ? "expand_more" : "chevron_right", " ");
     i0.ɵɵadvance(1);
-    i0.ɵɵproperty("checked", ctx_r53.descendantsAllSelected(node_r61))("indeterminate", ctx_r53.descendantsPartiallySelected(node_r61));
+    i0.ɵɵproperty("checked", ctx_r73.descendantsAllSelected(node_r81))("indeterminate", ctx_r73.descendantsPartiallySelected(node_r81));
     i0.ɵɵadvance(1);
-    i0.ɵɵtextInterpolate(node_r61.item);
+    i0.ɵɵtextInterpolate(node_r81.item);
 } }
 /**
  * Node for to-do item
