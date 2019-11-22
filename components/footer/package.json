@@ -1,0 +1,11 @@
+{
+  "name": "@gsa-sam/components-examples/components/footer",
+  "main": "../../bundles/components-examples-components-footer.umd.js",
+  "fesm5": "../../fesm5/components/footer.js",
+  "fesm2015": "../../fesm2015/components/footer.js",
+  "esm5": "../../esm5/components/footer/index.js",
+  "esm2015": "../../esm2015/components/footer/index.js",
+  "typings": "./index.d.ts",
+  "module": "../../fesm5/components/footer.js",
+  "es2015": "../../fesm2015/components/footer.js"
+}

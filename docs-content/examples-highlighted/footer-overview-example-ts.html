@@ -1,0 +1,74 @@
+<span class="hljs-keyword">import</span> {Component, OnInit} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core'</span>;
+<span class="hljs-keyword">import</span> {FooterModel} <span class="hljs-keyword">from</span> <span class="hljs-string">'@gsa-sam/components/footer'</span>;
+<span class="hljs-keyword">import</span> {NavigationMode} <span class="hljs-keyword">from</span> <span class="hljs-string">'@gsa-sam/components/core'</span>;
+<span class="hljs-keyword">import</span> {BehaviorSubject} <span class="hljs-keyword">from</span> <span class="hljs-string">'rxjs'</span>;
+
+<span class="hljs-comment">/**
+ * @title Footer overview
+ */</span>
+<span class="hljs-meta">@Component</span>({
+  selector: <span class="hljs-string">'footer-overview-example'</span>,
+  templateUrl: <span class="hljs-string">'footer-overview-example.html'</span>,
+  styleUrls: [<span class="hljs-string">'footer-overview-example.css'</span>]
+})
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> FooterOverviewExample <span class="hljs-keyword">implements</span> OnInit{
+  <span class="hljs-keyword">constructor</span>(<span class="hljs-params"></span>) {}
+  linkEvent = <span class="hljs-keyword">new</span> BehaviorSubject&lt;object&gt;({});
+
+  modelFooter: FooterModel = {
+    linkSections: [
+      {
+        text: <span class="hljs-string">'About beta.SAM.gov'</span>,
+        links: [
+          {
+            text: <span class="hljs-string">'Explore Our Community'</span>,
+            route: <span class="hljs-string">'/'</span>,
+            mode: NavigationMode.INTERNAL
+          },
+          { text: <span class="hljs-string">'Release Notes'</span>, route: <span class="hljs-string">'/'</span>, mode: NavigationMode.INTERNAL }
+        ]
+      },
+      {
+        text: <span class="hljs-string">'Our Partners'</span>,
+        links: [
+          { text: <span class="hljs-string">'Aquisition.gov'</span>, route: <span class="hljs-string">'/'</span>, mode: NavigationMode.INTERNAL },
+          {
+            text: <span class="hljs-string">'USASpending.gov'</span>,
+            route: <span class="hljs-string">'/'</span>,
+            mode: NavigationMode.INTERNAL
+          },
+          { text: <span class="hljs-string">'Grants.gov'</span>, route: <span class="hljs-string">'/'</span>, mode: NavigationMode.INTERNAL },
+          { text: <span class="hljs-string">'More Partners'</span>, route: <span class="hljs-string">'/'</span>, mode: NavigationMode.INTERNAL }
+        ]
+      },
+      {
+        text: <span class="hljs-string">'Customer Service'</span>,
+        links: [
+          {
+            text: <span class="hljs-string">'Learning Center'</span>,
+            route: <span class="hljs-string">'/'</span>,
+            mode: NavigationMode.INTERNAL
+          },
+          {
+            text: <span class="hljs-string">'Contact Federal Service Desk'</span>,
+            route: <span class="hljs-string">'/'</span>,
+            mode: NavigationMode.INTERNAL
+          },
+          { text: <span class="hljs-string">'Resources'</span>, route: <span class="hljs-string">'/'</span>, mode: NavigationMode.INTERNAL },
+          {
+            text: <span class="hljs-string">'Freedom of Information Act'</span>,
+            route: <span class="hljs-string">'/'</span>,
+            mode: NavigationMode.INTERNAL
+          }
+        ]
+      }
+    ]
+  };
+
+  ngOnInit() {
+    <span class="hljs-keyword">this</span>.linkEvent.subscribe(<span class="hljs-function"><span class="hljs-params">value</span> =&gt;</span> {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Link Event Clicked Change'</span>);
+      <span class="hljs-built_in">console</span>.log(value);
+    });
+  }
+}

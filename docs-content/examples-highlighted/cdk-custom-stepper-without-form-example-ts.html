@@ -1,0 +1,29 @@
+<span class="hljs-keyword">import</span> {Component} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core'</span>;
+<span class="hljs-keyword">import</span> {CdkStepper} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/cdk/stepper'</span>;
+
+<span class="hljs-comment">/** @title A custom CDK stepper without a form */</span>
+<span class="hljs-meta">@Component</span>({
+  selector: <span class="hljs-string">'cdk-custom-stepper-without-form-example'</span>,
+  templateUrl: <span class="hljs-string">'./cdk-custom-stepper-without-form-example.html'</span>,
+  styleUrls: [<span class="hljs-string">'./cdk-custom-stepper-without-form-example.css'</span>]
+})
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> CdkCustomStepperWithoutFormExample {}
+
+<span class="hljs-comment">/** Custom CDK stepper component */</span>
+<span class="hljs-meta">@Component</span>({
+  selector: <span class="hljs-string">'example-custom-stepper'</span>,
+  templateUrl: <span class="hljs-string">'./example-custom-stepper.html'</span>,
+  styleUrls: [<span class="hljs-string">'./example-custom-stepper.css'</span>],
+  providers: [{ provide: CdkStepper, useExisting: CustomStepper }]
+})
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> CustomStepper <span class="hljs-keyword">extends</span> CdkStepper {
+  onClick(index: <span class="hljs-built_in">number</span>): <span class="hljs-built_in">void</span> {
+    <span class="hljs-keyword">this</span>.selectedIndex = index;
+  }
+
+  <span class="hljs-comment">// These properties are required so that the Ivy template type checker in strict mode knows</span>
+  <span class="hljs-comment">// what kind of values are accepted by the `linear` and `selectedIndex` inputs which</span>
+  <span class="hljs-comment">// are inherited from `CdkStepper`.</span>
+  <span class="hljs-keyword">static</span> ngAcceptInputType_linear: <span class="hljs-built_in">boolean</span> | <span class="hljs-built_in">string</span> | <span class="hljs-literal">null</span> | <span class="hljs-literal">undefined</span>;
+  <span class="hljs-keyword">static</span> ngAcceptInputType_selectedIndex: <span class="hljs-built_in">number</span> | <span class="hljs-built_in">string</span> | <span class="hljs-literal">null</span> | <span class="hljs-literal">undefined</span>;
+}
