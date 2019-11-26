@@ -1,6 +1,7 @@
 <span class="hljs-keyword">import</span> {NgModule} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core'</span>;
+<span class="hljs-keyword">import</span> {CommonModule} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/common'</span>;
 <span class="hljs-keyword">import</span> {SdsFooterModule} <span class="hljs-keyword">from</span> <span class="hljs-string">'@gsa-sam/components/footer'</span>;
-<span class="hljs-keyword">import</span> {FooterOverviewExample} <span class="hljs-keyword">from</span> <span class="hljs-string">'./footer-overview/footer-overview-example'</span>;
+<span class="hljs-keyword">import</span> {FooterOverviewExample} <span class="hljs-keyword">from</span> <span class="hljs-string">'./overview/footer-overview-example'</span>;
 
 <span class="hljs-keyword">export</span> {
   FooterOverviewExample,
@@ -12,6 +13,7 @@
 
 <span class="hljs-meta">@NgModule</span>({
   imports: [
+    CommonModule,
     SdsFooterModule
   ],
   declarations: EXAMPLES,

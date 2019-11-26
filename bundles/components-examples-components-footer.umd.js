@@ -400,6 +400,7 @@
         FooterExamplesModule.decorators = [
             { type: i0.NgModule, args: [{
                         imports: [
+                            i1.CommonModule,
                             SdsFooterModule
                         ],
                         declarations: EXAMPLES,
@@ -408,15 +409,18 @@
         ];
         FooterExamplesModule.ɵmod = i0.ɵɵdefineNgModule({ type: FooterExamplesModule });
         FooterExamplesModule.ɵinj = i0.ɵɵdefineInjector({ factory: function FooterExamplesModule_Factory(t) { return new (t || FooterExamplesModule)(); }, imports: [[
+                    i1.CommonModule,
                     SdsFooterModule
                 ]] });
         return FooterExamplesModule;
     }());
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(FooterExamplesModule, { declarations: [FooterOverviewExample], imports: [SdsFooterModule], exports: [FooterOverviewExample] }); })();
+    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(FooterExamplesModule, { declarations: [FooterOverviewExample], imports: [i1.CommonModule,
+            SdsFooterModule], exports: [FooterOverviewExample] }); })();
     /*@__PURE__*/ (function () { i0.ɵsetClassMetadata(FooterExamplesModule, [{
             type: i0.NgModule,
             args: [{
                     imports: [
+                        i1.CommonModule,
                         SdsFooterModule
                     ],
                     declarations: EXAMPLES,

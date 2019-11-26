@@ -542,6 +542,7 @@ class FooterExamplesModule {
 FooterExamplesModule.decorators = [
     { type: NgModule, args: [{
                 imports: [
+                    CommonModule,
                     SdsFooterModule
                 ],
                 declarations: EXAMPLES,
@@ -550,13 +551,16 @@ FooterExamplesModule.decorators = [
 ];
 /** @nocollapse */ FooterExamplesModule.ɵmod = ɵɵdefineNgModule({ type: FooterExamplesModule });
 /** @nocollapse */ FooterExamplesModule.ɵinj = ɵɵdefineInjector({ factory: function FooterExamplesModule_Factory(t) { return new (t || FooterExamplesModule)(); }, imports: [[
+            CommonModule,
             SdsFooterModule
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(FooterExamplesModule, { declarations: [FooterOverviewExample], imports: [SdsFooterModule], exports: [FooterOverviewExample] }); })();
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(FooterExamplesModule, { declarations: [FooterOverviewExample], imports: [CommonModule,
+        SdsFooterModule], exports: [FooterOverviewExample] }); })();
 /*@__PURE__*/ (function () { ɵsetClassMetadata(FooterExamplesModule, [{
         type: NgModule,
         args: [{
                 imports: [
+                    CommonModule,
                     SdsFooterModule
                 ],
                 declarations: EXAMPLES,

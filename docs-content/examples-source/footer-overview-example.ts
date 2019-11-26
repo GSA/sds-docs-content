@@ -11,7 +11,7 @@ import {BehaviorSubject} from 'rxjs';
   templateUrl: 'footer-overview-example.html',
   styleUrls: ['footer-overview-example.css']
 })
-export class FooterOverviewExample implements OnInit{
+export class FooterOverviewExample implements OnInit {
   constructor() {}
   linkEvent = new BehaviorSubject<object>({});
 
