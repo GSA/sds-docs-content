@@ -1,6 +1,6 @@
 {
-  "name": "@gsa-sam/components-examples/components/footer",
-  "main": "../../bundles/components-examples-components-footer.umd.js",
+  "name": "@gsa-sam/sds-examples/components/footer",
+  "main": "../../bundles/sds-examples-components-footer.umd.js",
   "fesm5": "../../fesm5/components/footer.js",
   "fesm2015": "../../fesm2015/components/footer.js",
   "esm5": "../../esm5/components/footer/index.js",

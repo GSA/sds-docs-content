@@ -1,40 +1,37 @@
 {
-  "name": "@gsa-sam/components-examples",
-  "version": "1.0.0-beta.0",
-  "description": "SDS Components Examples",
-  "main": "./bundles/components-examples.umd.js",
-  "fesm5": "./fesm5/components-examples.js",
-  "fesm2015": "./fesm2015/components-examples.js",
-  "esm5": "./esm5/components-examples_public_index.js",
-  "esm2015": "./esm2015/components-examples_public_index.js",
-  "typings": "./components-examples_public_index.d.ts",
-  "module": "./fesm5/components-examples.js",
-  "es2015": "./fesm2015/components-examples.js",
+  "name": "@gsa-sam/sds-examples",
+  "version": "1.0.0-beta.2-sha-abda859",
+  "description": "SDS Examples",
+  "main": "./bundles/sds-examples.umd.js",
+  "module": "./fesm5/sds-examples.js",
+  "es2015": "./fesm2015/sds-examples.js",
+  "typings": "./index.d.ts",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/angular/components.git"
+    "url": "https://github.com/GSA/sam-design-system.git"
   },
   "keywords": [
     "angular",
-    "material",
-    "material design",
+    "sds",
+    "sam design system",
     "components"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/angular/components/issues"
+    "url": "https://github.com/GSA/sam-design-system/issues"
   },
-  "homepage": "https://github.com/angular/components#readme",
+  "homepage": "https://github.com/GSA/sam-design-system#readme",
   "peerDependencies": {
-    "@angular/cdk": "1.0.0-beta.0",
-    "@angular/cdk-experimental": "1.0.0-beta.0",
-    "@angular/core": "^9.0.0-0 || ^10.0.0-0",
-    "@angular/common": "^9.0.0-0 || ^10.0.0-0",
-    "@angular/material": "1.0.0-beta.0",
-    "@angular/material-experimental": "1.0.0-beta.0",
-    "@angular/material-moment-adapter": "1.0.0-beta.0",
-    "@gsa-sam/components": "1.0.0-beta.0",
-    "tslib": "^1.9.0"
-  }
+    "@angular/cdk": "^8.0.0 || ^9.0.0-0",
+    "@angular/core": "^8.0.0 || ^9.0.0-0",
+    "@angular/common": "^8.0.0 || ^9.0.0-0"
+  },
+  "dependencies": {
+    "tslib": "^1.7.1"
+  },
+  "fesm5": "./fesm5/sds-examples.js",
+  "fesm2015": "./fesm2015/sds-examples.js",
+  "esm5": "./esm5/index.js",
+  "esm2015": "./esm2015/index.js"
 }
