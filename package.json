@@ -1,6 +1,6 @@
 {
   "name": "@gsa-sam/sds-examples",
-  "version": "1.0.0-beta.4-sha-a861e9b",
+  "version": "1.0.0-beta.4-sha-5c08a51",
   "description": "SDS Examples",
   "main": "./bundles/sds-examples.umd.js",
   "module": "./fesm5/sds-examples.js",

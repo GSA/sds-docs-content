@@ -114,4 +114,4 @@ if (false) {
  */
 
 export { ExampleData, EXAMPLE_COMPONENTS, EXAMPLE_MODULES, EXAMPLE_LIST, ExampleModule };
-//# sourceMappingURL=examples.js.map
+//# sourceMappingURL=sds-examples.js.map

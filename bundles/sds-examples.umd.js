@@ -60,4 +60,4 @@
     Object.defineProperty(exports, '__esModule', { value: true });
 
 }));
-//# sourceMappingURL=examples.umd.js.map
+//# sourceMappingURL=sds-examples.umd.js.map

@@ -107,4 +107,4 @@
     Object.defineProperty(exports, '__esModule', { value: true });
 
 }));
-//# sourceMappingURL=examples-components-footer.umd.js.map
+//# sourceMappingURL=sds-examples-components-footer.umd.js.map
